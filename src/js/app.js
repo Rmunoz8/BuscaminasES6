@@ -1,12 +1,18 @@
+//Imports de la aplicación
+
 import _ from 'lodash';
 
 import {ocultarIniciales, jugar, reiniciar, reglas} from './pantalla.js';
 import {crearTablero} from './tablero.js';
 
+
  window.onload = function (){
 
-     ocultarIniciales();
 
+     ocultarIniciales(); //Ocultando elementos iniciales
+
+
+//    Control de eventos
      document.getElementById("normal").addEventListener("click", crearTablero, false);
      document.getElementById("dificil").addEventListener("click", crearTablero, false);
      document.getElementById("botonJugar").addEventListener("click", jugar, false);

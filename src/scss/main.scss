@@ -100,12 +100,12 @@ nav.menu > ul > li > a:hover{
 
 /*------------------------------Dificultad--------------------------------------*/
 
-nav#dificultad{
+nav.dificultad{
 /*    background-color: ;*/
     height: 150px;
 }
 
-nav#dificultad > ul > li > a{
+nav.dificultad > ul > li > a{
     height: 100px;
     width: 20%;
 //    background-color: ;
@@ -123,7 +123,7 @@ nav#dificultad > ul > li > a{
     margin-right: auto;
 }
 
-nav#dificultad > ul > li > a:hover{
+nav.dificultad > ul > li > a:hover{
     transform: scale(1.01);
     background-color: #0FB549;
     color: #322B2B;
@@ -172,6 +172,8 @@ section#reglas > h2{
     margin-bottom: 10%;
 }
 
+/*---------------------------------------Tablero-----------------------------------------------*/
 
-
-
+section#tablero{
+    border: solid;
+}

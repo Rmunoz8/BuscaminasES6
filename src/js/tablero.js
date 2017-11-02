@@ -2,11 +2,14 @@
 
 import {tablero} from './pantalla.js';
 import {Casilla} from './casilla.js';
+import {crearClases} from './app.js';
 
 export function crearTablero(){ // Función que genera el tablero
     tablero();
     let tamanyo = selDificultad(this.id);
-    console.log(tamanyo);
+//    console.log(tamanyo);
+    crearClases(tamanyo);
+    let num = 1;
     var padre = document.getElementById("tablero");
     for(var i = 1; i <= tamanyo; i++){
             var salto = document.createElement("br");
@@ -14,9 +17,13 @@ export function crearTablero(){ // Función que genera el tablero
             var imgT = document.createElement("img");
             imgT.setAttribute("src", 'img/Bloque.png');
             padre.appendChild(imgT);
-            let nombreClas = "cas"+i;
-            var nombreClas = new Casilla(true, 1, false);
-            cas.holaMundo();
+            let nombre = "cas"+num;
+//            let nombre = nombreClas;
+//            imgT.setAttribute("id", nombre);
+            num++;
+//            nombreClas.dimeNombre();
+            imgT.setAttribute("onclick",nombre+".dimeNombre();");
+//            nombreClas = new Casilla(nombre, false, 0, false);
         }
         padre.appendChild(salto);
     }

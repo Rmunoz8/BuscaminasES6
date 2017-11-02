@@ -2,6 +2,7 @@
 
 import _ from 'lodash';
 
+import {Casilla} from './casilla.js';
 import {ocultarIniciales, jugar, reiniciar, reglas} from './pantalla.js';
 import {crearTablero} from './tablero.js';
 
@@ -18,7 +19,4 @@ import {crearTablero} from './tablero.js';
      document.getElementById("botonJugar").addEventListener("click", jugar, false);
      document.getElementById("botonReiniciar").addEventListener("click", reiniciar, false);
      document.getElementById("botonReglas").addEventListener("click", reglas, false);
-
-
-
 }

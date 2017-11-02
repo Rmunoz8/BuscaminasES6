@@ -14,6 +14,7 @@ export let ocultarIniciales = () =>{
         document.getElementById("reglas").style.display = "none";
         document.getElementById("liJugar").style.display = "none";
         document.getElementById("titulo").style.display = "none";
+        document.getElementById("tablero").style.display = "none";
         document.getElementById("liReiniciar").style.display = "block";
         document.getElementById("dificultad").style.display = "block";
 
@@ -22,6 +23,7 @@ export let ocultarIniciales = () =>{
     export let reiniciar = () =>{
         /* Oculta los elementos no necesarios y
         muestra el boton de reiniciar*/
+        document.getElementById("tablero").style.display = "none";
          document.getElementById("reglas").style.display = "none";
          document.getElementById("dificultad").style.display = "none" ;
          document.getElementById("liReiniciar").style.display = "none";
@@ -32,6 +34,7 @@ export let ocultarIniciales = () =>{
       export let reglas = () =>{
         /* Oculta los elementos no necesarios y
         muestra los que pertenecen a las reglas*/
+          document.getElementById("tablero").style.display = "none";
          document.getElementById("titulo").style.display = "none";
          document.getElementById("dificultad").style.display = "none";
          document.getElementById("reglas").style.display = "block";

@@ -22,7 +22,7 @@ export function crearTablero(){ // Función que genera el tablero
 //            imgT.setAttribute("id", nombre);
             num++;
 //            nombreClas.dimeNombre();
-            imgT.setAttribute("onclick",nombre+".dimeNombre();");
+            imgT.setAttribute("onclick",console.log(`Soy la casilla ${nombre}`));
 //            nombreClas = new Casilla(nombre, false, 0, false);
         }
         padre.appendChild(salto);
@@ -39,9 +39,3 @@ function selDificultad(dif){  // Función para obtener el tamaño de la tabla a 
     }
     return tamanyo;
 }
-
-
-
-
-
-

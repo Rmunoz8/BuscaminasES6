@@ -20,25 +20,20 @@ import {crearTablero} from './tablero.js';
      document.getElementById("botonReiniciar").addEventListener("click", reiniciar, false);
      document.getElementById("botonReglas").addEventListener("click", reglas, false);
 //     document.getElementById("cas1").addEventListener("click", cas1.dimeNombre(), false);
-
+//     document.getElementById("hola").addEventListener("click", prueba, false);
 
 }
 
 
-export function crearClases(tamanyo){
-     let num = 1;
-     for(var i = 1; i <= tamanyo; i++){
-         for(var j = 1; j <= tamanyo; j++){
-             let nombreCas = "cas"+num;
-             let nombre = nombreCas;
-             nombreCas = new Casilla(nombre, false, 0, false);
-             nombreCas.dimeNombre();
-             num++;
-         }
-     }
- }
-
-export function prueba(){
-    alert("hola");
-}
+//export function crearClases(tamanyo){
+//     let num = 1;
+//     for(var i = 1; i <= tamanyo; i++){
+//         for(var j = 1; j <= tamanyo; j++){
+//             let nombreCas = "cas"+num;
+//             let nombre = nombreCas;
+////             nombreCas.dimeNombre();
+//             num++;
+//         }
+//     }
+// }
 

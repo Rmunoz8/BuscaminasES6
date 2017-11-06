@@ -1,17 +1,12 @@
 class Casilla {
-    constructor(nombre, bomba, numBombas, marcada){
-        this.nombre = nombre
-        this.bomba = bomba;
-        this.numBombas = numBombas;
-        this.marcada = marcada;
+    constructor(valor, x, y){
+        this.valor = valor;
+        this.x = x;
+        this.y = y;
     }
 
-    holaMundo(){
-        console.log(`Hola mundo tengo bomba? ${this.bomba} mi nombre es ${this.nombre}`);
-    }
-
-    dimeNombre(){
-        console.log(`Soy la casilla ${this.nombre}`);
+    getCoordenada(){
+        alert.log(`Coordenadas: ${this.x} x ${this.y}`);
     }
 
 

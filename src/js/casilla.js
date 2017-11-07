@@ -5,8 +5,28 @@ class Casilla {
         this.y = y;
     }
 
+
+
+    get CoordX(){
+        return this.x;
+
+    }
+
+    get CoordY(){
+        return this.y;
+
+    }
+
+    get Valor(){
+        return this.valor;
+    }
+
+    set Valor(valor){
+        this.valor = valor;
+    }
+
     getCoordenada(){
-        alert.log(`Coordenadas: ${this.x} x ${this.y}`);
+        console.log(`Coordenadas: ${this.x} x ${this.y} x ${this.valor}`);
     }
 
 

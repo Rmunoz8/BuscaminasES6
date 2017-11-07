@@ -178,7 +178,11 @@ section#tablero{
     border: solid;
 }
 
-section#tablero > img{
+section#tablero > table{
+    margin: 0 auto;
+}
+
+section#tablero > table > tr > td > img{
     width: 30px;
 }
 

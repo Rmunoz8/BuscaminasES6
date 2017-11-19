@@ -20,6 +20,7 @@ class Casilla {
 
     get Valor(){
         return this.valor;
+<<<<<<< HEAD
     }
 
     set Valor(valor){
@@ -88,6 +89,16 @@ class Casilla {
             expandirAgua(x, y);
         }
 
+=======
+    }
+
+    set Valor(valor){
+        this.valor = valor;
+    }
+
+    getCoordenada(){
+        console.log(`Coordenadas: ${this.x} x ${this.y} x ${this.valor}`);
+>>>>>>> Buscaminas/master
     }
 
 

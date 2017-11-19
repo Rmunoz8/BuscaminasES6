@@ -22,6 +22,9 @@ import {crearTablero, casillas} from './tablero.js';
 
 
 
+<<<<<<< HEAD
 }
 
 
+=======
+>>>>>>> Buscaminas/master

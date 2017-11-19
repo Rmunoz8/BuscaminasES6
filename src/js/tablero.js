@@ -3,12 +3,18 @@ import _ from 'lodash';
 import {tablero} from './pantalla.js';
 import {Casilla} from './casilla.js';
 import {prueba} from './app.js';
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> Buscaminas/master
 export var casillas=[];
 export function crearTablero() { // Función que genera el tablero
     tablero();
     let tamanyo = selDificultad(this.id);
+<<<<<<< HEAD
     let bomba = dameNumBomb(this.id);
 
     let num = 1;
@@ -19,6 +25,13 @@ export function crearTablero() { // Función que genera el tablero
     // Colgamos la tabla del padre
     padre.appendChild(tabla);
 
+=======
+
+    let num = 1;
+    let padre = document.getElementById("tablero");
+    let tabla = document.createElement("table");
+    padre.appendChild(tabla);
+>>>>>>> Buscaminas/master
     for (var i = 0; i < tamanyo; i++) {
         casillas[i] = [];
         let linea = document.createElement("tr");
@@ -28,6 +41,7 @@ export function crearTablero() { // Función que genera el tablero
             columna.setAttribute("id", i+"_"+j);
             linea.appendChild(columna);
             let imagen = document.createElement("img");
+<<<<<<< HEAD
             imagen.setAttribute("id", "img"+i+"_"+j);
             imagen.setAttribute("src", "img/i0.png");
             columna.appendChild(imagen);
@@ -152,19 +166,44 @@ function coords(){
     document.getElementById("img"+x+"_"+y).setAttribute("src", "img/i"+valor+".png");
 
     casillas[x][y].clickCasilla(x, y);
+=======
+
+           columna.innerHTML = i+","+j;
+            let nombre = "casilla"+i+"_"+j;
+            nombre = new Casilla("img/Bloque.png", i, j);
+//            imagen.setAttribute("id","imagen-"+nombre.CoordX+"_"+nombre.CoordY);
+//            imagen.src = nombre.Valor;
+//            columna.appendChild(imagen);
+//            nombre.getCoordenada();
+            casillas[i][j] = nombre;
+
+        }
+    }
+    casillas[0][1].getCoordenada();
+    crearListeners(tamanyo,casillas);
+
+>>>>>>> Buscaminas/master
 }
 
+function crearListeners(tamanyo,casillas){
 
+<<<<<<< HEAD
 function selDificultad(dif) { // Función para obtener el tamaño de la tabla a partir de la dificultad
     var tamanyo;
     if (dif == 'normal') {
         tamanyo = 8;
     } else {
         tamanyo = 10;
+=======
+    for(var i = 0; i < tamanyo; i++){
+        for(var j = 0; j < tamanyo; j++){
+            document.getElementById(i+"_"+j).addEventListener("click",coords , false);
+        }
+>>>>>>> Buscaminas/master
     }
-    return tamanyo;
 }
 
+<<<<<<< HEAD
  function dameNumBomb(dif) { // Función para obtener el número de bombas
     var bomba;
     if (dif == 'normal') {
@@ -227,4 +266,21 @@ export function expandirAgua(x, y){
             expandirAgua(x+1, y+1);
         }
     }
+=======
+function coords(){
+    casillas[0][0].getCoordenada();
+
+
+}
+
+
+function selDificultad(dif) { // Función para obtener el tamaño de la tabla a partir de la dificultad
+    var tamanyo;
+    if (dif == 'normal') {
+        tamanyo = 8;
+    } else {
+        tamanyo = 10;
+    }
+    return tamanyo;
+>>>>>>> Buscaminas/master
 }
